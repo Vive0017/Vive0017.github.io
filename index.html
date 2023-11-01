@@ -214,12 +214,7 @@
 
 
   <script type="text/javascript">
-    var specVis1 = "js/piechart.vg.json";
-    var specVis2 = "js/map.vg.json";
-    var specVis3 = "js/lineplot.vg.json";
-    var specVis4 = "js/barplot1.vg.json";
-    var specVis5 = "js/barplot2.vg.json";
-    var specVis6 = "js/barplot3.vg.json";
+ 
     const spec = {
   
 
@@ -280,8 +275,6 @@ const spec1 = {
 
 };   
 
-vegaEmbed("#vis2", spec1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
-    vegaEmbed("#vis1", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     
     const spec2 = {
 
@@ -393,28 +386,12 @@ vegaEmbed("#vis2", spec1, {mode: "vega-lite"}).then(console.log).catch(console.w
   }
 }
 
-
+    vegaEmbed("#vis2", spec1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis1", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis3", spec2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis4", spec3, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis5", spec4, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis6", spec5, {mode: "vega-lite"}).then(console.log).catch(console.warn);
-
-
-    vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-  
-    vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    vegaEmbed('#vis6', specVis6, {"actions": false}).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
 
   
   </script>
